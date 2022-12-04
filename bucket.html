@@ -1,7 +1,7 @@
 <html>
   <head>
     <script src="https://cfdhevan.s3.ap-southeast-1.amazonaws.com/vue.js"></script>
-    <title>Just Native</title>
+    <title>Bucket</title>
   </head>
   <style>
     .flex-container {
@@ -16,6 +16,24 @@
           width="200"
           height="200"
           :src="`https://cfdhevan.s3.ap-southeast-1.amazonaws.com/product_${index}.jpg`"
+        />
+      </div>
+    </div>
+    <div id="app" class="flex-container">
+      <div v-for="index in 24">
+        <img
+          width="200"
+          height="200"
+          :src="`https://cfdhevan.s3.ap-southeast-1.amazonaws.com/avatar_${index}.jpg`"
+        />
+      </div>
+    </div>
+    <div id="app" class="flex-container">
+      <div v-for="index in 24">
+        <img
+          width="200"
+          height="200"
+          :src="`https://cfdhevan.s3.ap-southeast-1.amazonaws.com/cover_${index}.jpg`"
         />
       </div>
     </div>

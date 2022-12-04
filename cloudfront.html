@@ -1,7 +1,7 @@
 <html>
   <head>
     <script src="https://d3konbqbsgxcmk.cloudfront.net/vue.js"></script>
-    <title>Just Native</title>
+    <title>Cloud Front</title>
   </head>
   <style>
     .flex-container {
@@ -18,6 +18,23 @@
           :src="`https://d3konbqbsgxcmk.cloudfront.net/product_${index}.jpg`"
         />
       </div>
+      <div id="app" class="flex-container">
+        <div v-for="index in 24">
+          <img
+            width="200"
+            height="200"
+            :src="`https://d3konbqbsgxcmk.cloudfront.net/avatar_${index}.jpg`"
+          />
+        </div>
+      </div>
+      <div id="app" class="flex-container">
+        <div v-for="index in 24">
+          <img
+            width="200"
+            height="200"
+            :src="`https://d3konbqbsgxcmk.cloudfront.net/cover_${index}.jpg`"
+          />
+        </div>
     </div>
   </body>
   <script>

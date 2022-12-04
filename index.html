@@ -19,6 +19,25 @@
         />
       </div>
     </div>
+    <div id="app" class="flex-container">
+      <div v-for="index in 24">
+        <img
+          width="200"
+          height="200"
+          :src="`/images/avatar_${index}.jpg`"
+        />
+      </div>
+    </div>
+    <div id="app" class="flex-container">
+      <div v-for="index in 24">
+        <img
+          width="200"
+          height="200"
+          :src="`/images/cover_${index}.jpg`"
+        />
+      </div>
+    </div>
+    
   </body>
   <script>
     const { createApp } = Vue;
